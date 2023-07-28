@@ -1,8 +1,5 @@
 package com.v2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public  class AcademiaCobol extends Academia  {
 
     public AcademiaCobol(String nombreAcademia, String ubicacion, int alumnosAcademia, String duracion, String modalidad, boolean disponibilidad) {
@@ -17,9 +14,20 @@ public  class AcademiaCobol extends Academia  {
         }
     }
 
+    @Override
+    public void ingresarAcademias( String nombreAcademia) {
+
+    }
+
+
+
     public void numeroDeAlumnos() {
         System.out.println("El numero de ALumnos  es:" + " " + getAlumnosAcademia() + " " +  " en la Academia" + " " + getNombreAcademia());
     }
+
+
+
+
 
     @Override
     public String toString() {

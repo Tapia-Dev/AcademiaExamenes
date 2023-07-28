@@ -8,7 +8,7 @@ import java.util.List;
 public class Principal1 {
     public static void main(String[] args) {
 
-        System.out.println("HOLAA");
+
         List<Academia> academias = new ArrayList<>();
         academias.add(new AcademiaJava("Java", "CDMX", 10, "160 HRS", "A distancia", true));
         academias.add(new AcademiaJava("Java", "EDOMEX", 15, "160 HRS", "A distancia", false));

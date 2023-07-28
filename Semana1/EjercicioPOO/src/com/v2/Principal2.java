@@ -10,13 +10,16 @@ public class Principal2 {
         List<Academia>academias = new ArrayList<>();
         academias.add(new AcademiaJava("Java", "EDOMEX", 15, "160 HRS", "A distancia", true));
         academias.add(new AcademiaCobol("Cobol", "MERIDA", 10, "160 HRS", "Presencial", false));
+        academias.add(new AcademiaCobol("Cobol", "CDMX", 40, "160 HRS", "Presencial", false));
 
 
-        for (Academia academia : academias){
+
+        for (Academia academia : academias) {
             System.out.println(academia);
             academia.numeroDeAlumnos();
+            academia.ingresarAcademias("Angular");
             System.out.println(academia.mostrarDisponibilidad());
-
         }
+
     }
 }

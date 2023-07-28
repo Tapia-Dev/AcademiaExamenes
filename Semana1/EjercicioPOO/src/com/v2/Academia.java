@@ -67,6 +67,8 @@ public abstract class  Academia implements NumeroDeAlumnos {
         this.disponibilidad = disponibilidad;
     }
 
+    public abstract void ingresarAcademias(String nombreAcademia);
+
     @Override
     public String toString() {
         return "Academia{" +
