@@ -17,7 +17,7 @@ public class Principal2 {
         for (Academia academia : academias) {
             System.out.println(academia);
             academia.numeroDeAlumnos();
-            academia.ingresarAcademias("Angular");
+
             System.out.println(academia.mostrarDisponibilidad());
         }
 

@@ -15,12 +15,9 @@ public class AcademiaJava extends Academia {
     }
 
     @Override
-    public void ingresarAcademias(String nombreAcademia) {
-
-    }
-
-    @Override
     public void numeroDeAlumnos() {
         System.out.println("El numero de ALumnos  es:" + " " + getAlumnosAcademia() + " " +  " en la Academia" + " " + getNombreAcademia());
     }
+
+
 }

@@ -1,7 +1,4 @@
-package com.email;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.email.v1;
 
 public class CorreoElectronico {
 

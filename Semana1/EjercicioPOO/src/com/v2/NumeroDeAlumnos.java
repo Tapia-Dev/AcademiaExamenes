@@ -5,7 +5,7 @@ public interface NumeroDeAlumnos {
     // Este metodo lo podemos implementar en nuestras clases
 
     void numeroDeAlumnos();
-    void ingresarAcademias(String nombreAcademia);
+
 
 
 }
