@@ -1,3 +1,19 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+# Ignorar archivos .class generados por el compilador Java
+*.class
+
+# Ignorar archivos de configuración específicos de tu IDE (por ejemplo, Eclipse o IntelliJ)
+.settings/
+.classpath
+.project
+
+# Ignorar archivos compilados y directorios de construcción
+/target/
+/bin/
+
+# Ignorar archivos de registro o temporales
+*.log
+*.tmp
+
