@@ -18,14 +18,18 @@ public class Principal {
 
         operacionUsuario.attach(deposito1);
         operacionUsuario.attach(retiro1);
+        operacionUsuario.notificar();
 
 
         System.out.println("----------------");
         OperacionUsuario operacionUsuario2 = new OperacionUsuario();
         Deposito deposito2 = new Deposito("Fatima","18253563",200,new Date());
-        operacionUsuario.attach(deposito2);
+        Retiro retiro2 = new Retiro("Fatima","18253563",400,new Date());
 
-        operacionUsuario.notificar();
+        operacionUsuario2.attach(deposito2);
+        operacionUsuario2.attach(retiro2);
+        operacionUsuario2.notificar();
+
 //        operacionUsuario.detach(retiro);
 //        operacionUsuario.notificar();
 
