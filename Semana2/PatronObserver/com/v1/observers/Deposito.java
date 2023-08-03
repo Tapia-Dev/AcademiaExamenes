@@ -2,6 +2,7 @@ package EjemploObserver.com.v1.observers;
 
 import EjemploObserver.com.v1.observer.Observer;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Deposito implements Observer {
@@ -12,12 +13,14 @@ public class Deposito implements Observer {
     private String noCuenta;
     private double cantidad;
     private Date fecha;
+    private LocalDate fecha2;
 
-    public Deposito(String nombre, String noCuenta, double cantidad, Date fecha) {
+    public Deposito(String nombre, String noCuenta, double cantidad, Date fecha,LocalDate fecha2) {
         this.nombre = nombre;
         this.noCuenta = noCuenta;
         this.cantidad = cantidad;
         this.fecha = fecha;
+        this.fecha2 = fecha2;
     }
 
     public void depositar() {
