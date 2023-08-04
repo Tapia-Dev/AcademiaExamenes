@@ -22,7 +22,7 @@ public class Principal2 {
 
 
         Conductor conductor1 = new Conductor("FATIMA", TipoCamion.CAMION_DE_REPARTO, TipoPaqueterias.FEDEX);
-        conductor1.setRuta(ruta1);
+        conductor1.setRuta(ruta2);
         conductor1.imprimirRuta();
 
 

@@ -12,13 +12,12 @@ public class Deposito extends Observer {
     * Estas son las clases son observadores que extienden la clase Observer (herencia).
     *
     * */
-
     private String nombre;
     private String noCuenta;
     private double cantidad;
     private Date fecha;
 
-    public Deposito(String nombre, String noCuenta, double cantidad, Date fecha, LocalDate now) {
+    public Deposito(String nombre, String noCuenta, double cantidad, Date fecha) {
         this.nombre = nombre;
         this.noCuenta = noCuenta;
         this.cantidad = cantidad;
