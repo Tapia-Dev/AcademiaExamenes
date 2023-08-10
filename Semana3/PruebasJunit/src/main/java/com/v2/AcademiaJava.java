@@ -1,4 +1,4 @@
-package com.v1;
+package com.v2;
 
 public class AcademiaJava extends Academia {
 

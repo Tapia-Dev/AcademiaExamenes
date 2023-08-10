@@ -1,5 +1,7 @@
-import com.dto.CursoDTO;
-import com.service.CursoService;
+package com.v1;
+
+import com.v1.dto.CursoDTO;
+import com.v1.service.CursoService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -9,14 +11,15 @@ import org.junit.jupiter.api.Test;
 
 class CursoServiceTest {
 
+
     private CursoService cursoService;
+
     @BeforeEach
     public void setUp(){
         cursoService = new CursoService();
         cursoService.crearCurso(1,"JAVA",1500,"160HRS");
         cursoService.crearCurso(100,"PHP",1200,"180HRS");
         cursoService.actualizarCurso(100,"PHP",1800,"180HRS");
-
     }
 
     @DisplayName("se espera que el resultado curso sea igual al curso que estamos esperamos")
@@ -46,7 +49,6 @@ class CursoServiceTest {
 //        CursoService cursoService = new CursoService();
         final CursoDTO resultado = cursoService.crearCurso(1,"PHP", 2500,"160HRS");
         Assertions.assertEquals(cursoEsperado.getIdCurso(),resultado.getIdCurso());
-
     }
 
     @DisplayName("OBTENER EL CURSO QUE BUSCAMOS POR ID")
@@ -65,10 +67,9 @@ class CursoServiceTest {
     @Test
     public void test5(){
         CursoDTO cursoEsperado = new CursoDTO(100,"PHP",1800,"180hrs");
-//        CursoService cursoService = new CursoService();
-
-        // CREAMOS EL CURSO
-//        cursoService.crearCurso(100,"PHP",1500,"160HRS");
+//      CursoService cursoService = new CursoService();
+//      CREAMOS EL CURSO
+//      cursoService.crearCurso(100,"PHP",1500,"160HRS");
         final CursoDTO resultado = cursoService.actualizarCurso(100,"PHP",1800,"180HRS");
         Assertions.assertEquals(cursoEsperado.getIdCurso(),resultado.getIdCurso());
     }

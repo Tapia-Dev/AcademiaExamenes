@@ -1,6 +1,5 @@
-package com.dto;
+package com.v1.dto;
 
-import java.util.Collection;
 import java.util.Objects;
 
 public class CursoDTO {

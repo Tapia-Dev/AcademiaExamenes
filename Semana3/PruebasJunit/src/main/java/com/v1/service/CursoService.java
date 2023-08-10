@@ -1,6 +1,6 @@
-package com.service;
+package com.v1.service;
 
-import com.dto.CursoDTO;
+import com.v1.dto.CursoDTO;
 
 import java.util.HashMap;
 
